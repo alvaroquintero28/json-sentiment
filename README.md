@@ -1,15 +1,40 @@
-# Requests, JSON, and basic NLP with spaCy
+# P4: Employ Requests, JSON, NLP with SpaCy
 
-Complete the tasks in the Python Notebook in this repository.
-To be submitted for credit, all changes must be committed and pushed to this repository (do not create your own repository unless instructed to on the course website).
+## Project Overview
 
-## Rubric
+Use a Working API and Working With Web Information
 
-* (Question 1) Lyrics printed: 1 pt
-* (Question 1) File created and submitted with notebook: 1 pt
-* (Question 2) Correct polarity reported: 1 pt
-* (Question 2) Question answered thoughtfully: 1 pt
-* (Question 3) Function defined as specified: 1 pt
-* (Question 3) Song lyrics retrieved and stored in separate files (0.5 pts/song): 2 pts
-* (Question 4) Polarity scores printed (with appropriate label containing song title, .25 pts/song): 1 pt
-* (Question 4) Questions answered thoughtfully: 2 pts
+## Objectives
+
+This exercise illustrates how to access web-hosted APIs, get back a response in JSONLinks to an external site. format, and extract the information we need from the JSON. Accessing APIs is a key skill for data analysts. We can use web APIs to get stock data, weather data, and much more. We'll use an API to access song lyrics or poems in this exercise. We don't care which API - there are many and they change. The skill skills are being able to (a) make an API request and (b) find the information we need in the returned response. 
+
+## Songs in this project
+
+-'Baby' by Justin Bieber
+-'Back At One' by Brian McKnight 
+-'Promises' by Maverick City Music 
+-'Umbrella' by Rihanna
+
+
+## Tools and Libraries
+
+- lyrics.ovh API: For accessing lyrics data.
+
+- spaCy: For natural language processing.
+
+- SpacyTextBlob: For sentiment analysis.
+
+## Dependencies Installed
+
+- **spaCy**
+- **SpacyTextBlob**
+- **en_core_web_sm model for spaCy**
+
+To install these dependencies, use the following commands:
+
+```bash
+python -m venv .env
+source .env/bin/activate
+pip install -U pip setuptools wheel
+pip install -U spacy
+python -m spacy download en_core_web_sm
